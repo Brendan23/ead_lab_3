@@ -1,0 +1,28 @@
+mutation order_new($order: CreateOrderInput!, $custhist: CreateCustHistInput!, $orderline: CreateOrderlineInput!) {
+  createOrder(input: $order) {
+    order {
+      orderid
+      orderdate
+      customerid
+      netamount
+      tax
+      totalamount
+    }
+  }
+  createCustHist(input: $custhist) {
+    custHist {
+      customerid
+      orderid	
+      prodId
+    }
+  }
+  createOrderline(input: $orderline) {
+    orderline {
+      orderlineid
+      orderid
+      prodId
+      quantity
+      orderdate
+    }
+  }
+}

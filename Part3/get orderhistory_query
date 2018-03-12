@@ -1,0 +1,21 @@
+query getorderHistory {
+  customerByCustomerid(customerid: 200) {
+    customerid
+    custHistsByCustomerid {
+      nodes {
+        orderid,
+        prodId
+      }
+    }
+    ordersByCustomerid {
+      nodes {
+        orderid,
+        orderdate,
+        netamount,
+        tax,
+        totalamount
+      }
+     }
+    
+    }
+}

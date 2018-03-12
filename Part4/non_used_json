@@ -1,0 +1,28 @@
+{
+  "order":{
+    "order": {
+      "orderid": 88888,
+    	"orderdate": "2018-03-01",
+      "customerid": 8888,
+      "netamount": 7000,
+      "tax": 70,
+      "totalamount": 7070
+    }
+  },
+  "custhist": 	{
+    "custHist": {
+      "customerid": 8888,
+      "orderid": 88888,
+      "prodId": 9009
+    }
+  },
+  "orderline":	{
+    "orderline": {
+      "orderlineid": 888,
+      "orderid": 88888,
+      "prodId": 9009,
+      "quantity": 77,
+      "orderdate": "2018-03-01"
+    }
+  }  
+}
